@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "105",
+  "name": "Promptr Gemini Web",
+  "version": "0.2.0",
+  "description": "Connect your signed-in Gemini account to the Promptr desktop app.",
+  "permissions": ["nativeMessaging", "scripting"],
+  "host_permissions": ["https://gemini.google.com/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Connect Promptr Gemini Web"}
+}

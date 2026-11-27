@@ -1,0 +1,21 @@
+{
+  "manifest_version": 1,
+  "protocol_versions": ["2.0"],
+  "name": "gemini-web",
+  "version": "0.2.0",
+  "type": "provider",
+  "command": "gemini_web.py",
+  "description": "Chat through the Gemini website using a Chrome account or guest session",
+  "homepage": "https://gemini.google.com/",
+  "models": ["auto"],
+  "config_schema": {
+    "session": {
+      "type": "choice",
+      "label": "Browser session",
+      "choices": ["guest", "signed-in"],
+      "default": "guest",
+      "comment": "Choose signed-in to use models from your Gemini account."
+    }
+  },
+  "setup_hint": "For signed-in chat, load the Gemini Web extension in Chrome, register its native host, and click the extension to connect. See the plugin README for setup."
+}
